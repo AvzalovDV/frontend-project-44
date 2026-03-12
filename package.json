@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "bin": {
-  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "description": "[![Actions Status](https://github.com/AvzalovDV/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AvzalovDV/frontend-project-44/actions)",
   "homepage": "https://github.com/AvzalovDV/frontend-project-44#readme",
@@ -18,6 +18,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
-  
 }
