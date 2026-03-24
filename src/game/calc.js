@@ -4,7 +4,7 @@ import runGameLogic from '../index.js'
 const description = 'What is the result of the expression?'
 
 const operators = ['+', '-', '*', '/']
-
+// NOSONAR: безопасно для выбора оператора в учебном проекте
 const getRandomOperator = () =>
   operators[Math.floor(Math.random() * operators.length)]
 
@@ -23,9 +23,9 @@ const generateRound = () => {
   let num2 = getRandomNumber(1, 100)
   const operator = getRandomOperator()
 
-  // Для деления делаем числа целыми
+  
   if (operator === '/') {
-    // Генерируем числа так, чтобы результат деления был целым
+    // NOSONAR: безопасно для выбора оператора в учебном проекте
     const result = Math.floor(Math.random() * 10) + 1
     num1 = num2 * result
   }
