@@ -23,7 +23,6 @@ const generateRound = () => {
   let num2 = getRandomNumber(1, 100)
   const operator = getRandomOperator()
 
-  
   if (operator === '/') {
     // NOSONAR: безопасно для выбора оператора в учебном проекте
     const result = Math.floor(Math.random() * 10) + 1
