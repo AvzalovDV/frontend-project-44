@@ -35,7 +35,7 @@ const displayWithHidden = (progression, hiddenIndex) => {
       display.push(progression[i])
     }
   }
-  return display.join(', ')
+  return display.join(' ')
 }
 
 const generateRound = () => {
