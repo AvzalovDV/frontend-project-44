@@ -6,7 +6,7 @@ const description = 'What is the result of the expression?'
 const operators = ['+', '-', '*']
 // NOSONAR: безопасно для выбора оператора в учебном проекте
 const getRandomOperator = () =>
-  operators[Math.floor(Math.random() * operators.length)]
+  operators[Math.floor(Math.random() * operators.length)] // NOSONAR
 
 const calculate = (a, b, operator) => {
   switch (operator) {
