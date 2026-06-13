@@ -3,7 +3,7 @@ import runGameLogic from '../index.js'
 
 const description = 'What is the result of the expression?'
 
-const operators = ['+', '-', '*', '/']
+const operators = ['+', '-', '*']
 // NOSONAR: безопасно для выбора оператора в учебном проекте
 const getRandomOperator = () =>
   operators[Math.floor(Math.random() * operators.length)]
@@ -13,7 +13,6 @@ const calculate = (a, b, operator) => {
     case '+': return a + b
     case '-': return a - b
     case '*': return a * b
-    case '/': return a / b
     default: return null
   }
 }
@@ -22,12 +21,6 @@ const generateRound = () => {
   let num1 = getRandomNumber(1, 100)
   let num2 = getRandomNumber(1, 100)
   const operator = getRandomOperator()
-
-  if (operator === '/') {
-    // NOSONAR: безопасно для выбора оператора в учебном проекте
-    const result = Math.floor(Math.random() * 10) + 1
-    num1 = num2 * result
-  }
 
   const answer = calculate(num1, num2, operator)
 
